@@ -1,6 +1,7 @@
 name: Review
 
 on:
+  status: {}
   pull_request_review:
     types:
       - submitted
