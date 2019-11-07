@@ -1,7 +1,7 @@
-name: Review
+name: Auxiliary
 
 on:
-  status: {}
+  # status: {}
   pull_request_review:
     types:
       - submitted
@@ -17,6 +17,6 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v1
-      - uses: maxkomarychev/merge-pal-action@master
+      - uses: maxkomarychev/merge-pal-action@labels
         with:
           token: ${{ secrets.GITHUB_TOKEN }}
