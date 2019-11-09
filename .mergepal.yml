@@ -2,4 +2,4 @@ blacklist:
   - black
 whitelist:
   - white
-method: squashsdfd
+method: squash

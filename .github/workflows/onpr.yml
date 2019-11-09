@@ -23,6 +23,6 @@ jobs:
       - test-that
     steps:
       - uses: actions/checkout@v1
-      - uses: maxkomarychev/merge-pal-action@labels
+      - uses: maxkomarychev/merge-pal-action@config
         with:
           token: ${{ secrets.GITHUB_TOKEN }}
