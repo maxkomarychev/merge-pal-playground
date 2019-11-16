@@ -18,10 +18,10 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - run: echo "${{ toJson(github.event) }}"
-  # mergepal:
-  #   runs-on: ubuntu-latest
-  #   steps:
-  #     - uses: actions/checkout@v1
-  #     - uses: maxkomarychev/merge-pal-action@master
-  #       with:
-  #         token: ${{ secrets.GITHUB_TOKEN }}
+  mergepal:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v1
+      - uses: maxkomarychev/merge-pal-action@master
+        with:
+          token: ${{ secrets.GITHUB_TOKEN }}
