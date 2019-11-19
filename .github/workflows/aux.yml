@@ -21,6 +21,6 @@ jobs:
   mergepal:
     runs-on: ubuntu-latest
     steps:
-      - uses: maxkomarychev/merge-pal-action@update
+      - uses: maxkomarychev/merge-pal-action@config-path
         with:
           token: ${{ secrets.GITHUB_TOKEN }}
